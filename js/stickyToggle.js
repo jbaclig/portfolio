@@ -29,15 +29,20 @@ $(document).ready(function(){
       stickyToggle(sticky, stickyWrapper, $(window));
   });
 
-  $('[data-collapse="left"]').each(function(){
+  $('[data-collapse="left"] .navbar-toggler').each(function(){
     $(this).on('click', function() {
-      if($(this).hasClass('expanded')){
-        $(this).removeClass('expanded');
+      if($(this).parent().parent().hasClass('expanded')){
+        $(this).parent().parent().removeClass('expanded');
       }
       else {
-        $(this).addClass('expanded');
+        $(this).parent().parent().addClass('expanded');
       }
+    });
 
+    $('[data-collapse="left"] .nav-item').each(function() {
+      $(this).on('click', function() {
+        $(this).parent().parent().parent().removeClass('expanded');
+      });
     });
   });
 

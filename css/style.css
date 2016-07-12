@@ -8,9 +8,9 @@ body {
   height: 100vh;
   left: -25%;
 
-  -webkit-transition: left .3s linear;
-  -moz-transition: left .3s linear;
-  transition: left .3s linear;
+  -webkit-transition: left .2s linear;
+  -moz-transition: left .2s linear;
+  transition: left .2s linear;
 }
 
 .nav-container.expanded {
