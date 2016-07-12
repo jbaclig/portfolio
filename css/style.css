@@ -1,37 +1,108 @@
+/***** font *****/
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,900';
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/***** typography *****/
+.text-brand {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 26px;
+  color: #FF6A5C;
+
+  -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  transition: color .5s linear;
+}
+
+.text-brand:hover {
+  color: #CCDFCB;
+  text-decoration: none;
+}
+
+
+.text-main {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.text-secondary {
+  font-size: 22px;
+}
+
+.text-nav {
+  font-size: 16px;
+}
+
+.text-body {
+  font-size: 14px;
+}
+
+/***** colors *****/
+.bg-color-nav {
+  background-color: #F0EFEC;
+}
+
+.color-nav-link {
+  color: #FF6A5C;
+
+  -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  transition: color .5s linear;
+}
+
+.color-nav-link:hover, .color-nav-link.active {
+  color: #056571;
+}
+
 /***** Extra Small Devices *****/
 body {
   overflow-x: hidden;
+  /*for Scrollspy*/
+  position: relative;
 }
+
+/* navigation */
 
 .nav-container {
   position: relative;
   height: 100vh;
-  left: -25%;
+  left: -41.666%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
   -webkit-transition: left .2s linear;
   -moz-transition: left .2s linear;
   transition: left .2s linear;
 }
 
+.nav-tab {
+  height: 70vh;
+  width: 100%;
+  border-radius: 3px;
+}
+
 .nav-container.expanded {
-  left: 0;
+  left: -3px;
 }
 
 .sticky.is-sticky{
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 33.333%;
+  width: 50%;
 }
 
 .navbar-custom {
   float: left;
-  height: 100vh;
+  height: 100%;
 }
 
-.collapse-left {
-  width:75%;
-  height: 100vh;
+.navbar.collapse-left {
+  padding-right: 0;
+  width:80%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -40,16 +111,30 @@ body {
 .collapse-button {
   padding: 0;
   text-align: center;
-  width: 25%;
+  width: 20%;
 }
 
 .navbar.collapse-button .navbar-toggler {
   padding: .5rem 0;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+}
 
+.brand {
+  margin-bottom: 20px;
+}
+
+/* content sections */
 .content {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* home page */
+.headshot {
+  border-radius: 100px;
+  border: 5px solid #CCDFCB;
 }
 
 /***** Smal Devices *****/
@@ -59,12 +144,36 @@ body {
 
 /***** Medium Devices *****/
 @media (min-width: 48em){
-  .nav-container {
-    left: 0;
+
+  /* typography */
+  .text-main {
+    font-size: 80px;
+    font-weight: 900;
   }
 
-  .collapse-left {
+  .text-secondary {
+    font-size: 28px;
+  }
+
+  .text-nav {
+    font-size: 20px;
+  }
+
+  .text-body {
+    font-size: 14px;
+  }
+
+  .nav-container {
+    left: -3px;
+  }
+
+  .nav-tab {
+    border-radius: 3px;
+  }
+
+  .navbar.collapse-left {
     width: 100%;
+    padding-right: 1rem;
   }
 
   .collapse-left .nav{
@@ -72,7 +181,7 @@ body {
   }
 
   .sticky.is-sticky {
-    width: 25%;
+    width: 16.667%;
   }
 }
 

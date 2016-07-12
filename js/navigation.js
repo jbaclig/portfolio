@@ -31,11 +31,11 @@ $(document).ready(function(){
 
   $('[data-collapse="left"] .navbar-toggler').each(function(){
     $(this).on('click', function() {
-      if($(this).parent().parent().hasClass('expanded')){
-        $(this).parent().parent().removeClass('expanded');
+      if($(this).parent().parent().parent().hasClass('expanded')){
+        $(this).parent().parent().parent().removeClass('expanded');
       }
       else {
-        $(this).parent().parent().addClass('expanded');
+        $(this).parent().parent().parent().addClass('expanded');
       }
     });
 
