@@ -40,6 +40,14 @@ body {
 }
 
 /***** colors *****/
+.color-white {
+  color: #fff;
+}
+
+.color-faded {
+  color: rgba(0,0,0,0.3);
+}
+
 .bg-color-main {
   background-color: #CCDFCB;
 }
@@ -48,8 +56,8 @@ body {
   background-color: #F5F1E9;
 }
 
-.bg-color-content-home {
-
+.bg-color-content.about-content {
+  background-color: #056571;
 }
 
 .color-nav-link, .navbar-toggler {
@@ -160,7 +168,7 @@ body {
 }
 
 /* content sections */
-.content {
+.home-content {
   min-height: 100vh;
 }
 
@@ -168,7 +176,6 @@ body {
 .intro-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: rgba(0,0,0,0.4);
 }
 
 .headshot-container {
@@ -199,6 +206,11 @@ body {
   padding: 14px 14px;
 }
 
+/* about page */
+.about-content {
+  padding: 100px 0;
+}
+
 @media(min-width: 413px) {
 }
 
@@ -225,7 +237,7 @@ body {
   }
 
   .text-body {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .nav-container {

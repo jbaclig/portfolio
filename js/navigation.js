@@ -33,15 +33,18 @@ $(document).ready(function(){
     $(this).on('click', function() {
       if($(this).parent().parent().parent().hasClass('expanded')){
         $(this).parent().parent().parent().removeClass('expanded');
+        $(this).children('.fa').removeClass('fa-times').addClass('fa-bars');
       }
       else {
         $(this).parent().parent().parent().addClass('expanded');
+        $(this).children('.fa').removeClass('fa-bars').addClass('fa-times');
       }
     });
 
     $('[data-collapse="left"] .nav-item').each(function() {
       $(this).on('click', function() {
         $(this).parent().parent().parent().parent().removeClass('expanded');
+        $('.navbar-toggler').children('.fa').removeClass('fa-times').addClass('fa-bars');
       });
     });
   });
