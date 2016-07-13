@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     $('[data-collapse="left"] .nav-item').each(function() {
       $(this).on('click', function() {
-        $(this).parent().parent().parent().removeClass('expanded');
+        $(this).parent().parent().parent().parent().removeClass('expanded');
       });
     });
   });

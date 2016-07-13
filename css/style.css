@@ -17,13 +17,13 @@ body {
 }
 
 .text-brand:hover {
-  color: #CCDFCB;
+  color: #056571;
   text-decoration: none;
 }
 
 
 .text-main {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
 }
 
@@ -40,20 +40,57 @@ body {
 }
 
 /***** colors *****/
-.bg-color-nav {
-  background-color: #F0EFEC;
+.bg-color-main {
+  background-color: #CCDFCB;
 }
 
-.color-nav-link {
-  color: #FF6A5C;
+.bg-color-nav {
+  background-color: #F5F1E9;
+}
 
-  -webkit-transition: color .5s linear;
-  -moz-transition: color .5s linear;
-  transition: color .5s linear;
+.bg-color-content-home {
+
+}
+
+.color-nav-link, .navbar-toggler {
+  color: #FF6A5C;
+}
+.color-nav-link {
+  border-color: #FF6A5C;
+
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 .color-nav-link:hover, .color-nav-link.active {
-  color: #056571;
+  color: #056572;
+  border-color: #056572;
+  text-decoration: none;
+}
+
+.color-sm-link {
+  color: #FFF;
+  border-color: #FFF;
+
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.color-sm-link:hover {
+  text-decoration: none;
+  color: #CCDFCB;
+  background-color: #FFF;
+}
+
+/***** flexbox vertical center *****/
+.nav-container, .collapse-left {
+  display: flex;
+}
+
+.nav-container, .collapse-left, .content{
+  align-items: center;
 }
 
 /***** Extra Small Devices *****/
@@ -69,8 +106,6 @@ body {
   position: relative;
   height: 100vh;
   left: -41.666%;
-  display: flex;
-  align-items: center;
   text-align: center;
 
   -webkit-transition: left .2s linear;
@@ -103,8 +138,6 @@ body {
 .navbar.collapse-left {
   padding-right: 0;
   width:80%;
-  display: flex;
-  align-items: center;
   text-align: center;
 }
 
@@ -132,9 +165,41 @@ body {
 }
 
 /* home page */
+.intro-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgba(0,0,0,0.4);
+}
+
+.headshot-container {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto;
+}
+
 .headshot {
   border-radius: 100px;
-  border: 5px solid #CCDFCB;
+  border: 5px solid #FFF;
+}
+
+.sm-icon {
+  display: inline-block;
+}
+
+.sm-icon > .fa {
+  padding: 14px 16px;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  position: relative;
+}
+
+.sm-icon.wide > .fa {
+  padding: 14px 14px;
+}
+
+@media(min-width: 413px) {
 }
 
 /***** Smal Devices *****/
@@ -183,6 +248,9 @@ body {
   .sticky.is-sticky {
     width: 16.667%;
   }
+
+  /* home page */
+
 }
 
 /***** Large Devices *****/
