@@ -65,4 +65,12 @@ $(document).ready(function(){
       });
   });
 
+  $('body').on('click', function() {
+    $('.projects-content .card-overlay').each(function() {
+      if($(this).hasClass('display')) {
+        $(this).removeClass('display');
+      }
+    });
+  });
+
 });

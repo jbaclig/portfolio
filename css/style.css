@@ -56,7 +56,7 @@ body {
   background-color: #CCDFCB;
 }
 
-.bg-color-nav {
+.bg-color-nav, .bg-color-content {
   background-color: #F5F1E9;
 }
 
@@ -64,13 +64,14 @@ body {
   background-color: #FF6A5C;
 }
 
-.bg-color-content.projects-content {
+.bg-color-content.experience-content {
   background-color: #056571;
 }
 
-.bg-color-card-sbpleaders {
+.bg-color-content.projects-content, .bg-color-card-sbpleaders {
   background-color: #414141;
 }
+
 
 .color-nav-link, .navbar-toggler {
   color: #FF6A5C;
@@ -100,14 +101,21 @@ body {
   background-color: #FFF;
 }
 
-.card .btn.btn-custom {
+.btn.btn-custom {
   border-color: #FFF;
   color: #FFF;
 }
 
+.btn.btn-custom:hover {
+  background-color: #FFF;
+}
+
 .card .btn.btn-custom:hover {
   color: #414141;
-  background-color: #FFF;
+}
+
+.experience .btn.btn-custom:hover {
+  color: #056571;
 }
 
 .label-card {
@@ -125,7 +133,7 @@ body {
 }
 
 /***** custom components *****/
-button, .btn, a[role="button"], a[role="button"] > * {
+button, .btn, a[role="button"], #home a[role="button"] > * {
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   transition: all .2s linear;
@@ -215,7 +223,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.about-content, .projects-content {
+.about-content, .projects-content, .experience-content, .contact-content {
   padding: 100px 0;
 }
 
@@ -302,6 +310,15 @@ body {
   color: #FF6A5C;
 }
 
+/* experience page */
+.experience {
+  padding: 1rem;
+}
+
+.title {
+  line-height: 16px;
+}
+
 /***** Smal Devices *****/
 @media(min-width: 34em) {
 
@@ -351,11 +368,18 @@ body {
 
   /* home page */
 
+  /* experience page */
+  .title {
+    line-height: 20px;
+  }
+
 }
 
 /***** Large Devices *****/
 @media (min-width: 62em) {
-
+  .nav-tab {
+    height: 50vh;
+  }
 }
 
 /***** Extra Large Devices *****/
