@@ -342,16 +342,47 @@
           <div class="col-xs-12">
             <div class="row">
               <div class="col-xs-11 col-xs-offset-1 col-md-10 col-md-offset-2">
-                <div class="row text-right">
-                  <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-12 text-right">
                     <h1 class="text-main color-faded">contact</h1>
                   </div>
-                  <form action="https://formspree.io/jon@baclig.com"
-                        method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
-                  </form>
+                  <div class="col-md-6 col-md-offset-2">
+                    <p class="text-body">
+                      Have a project you need done?  Want to talk to me about
+                      some of my projects?  Interested in hiring me?  Want an
+                      invite to one of those living room dance parties (Sure,
+                      your dog can come too!)?  Something else?  Fill out the
+                      form below, and I'll get back to you as soon as I can!
+                    </p>
+                    <form action="https://formspree.io/jon@baclig.com"
+                          method="POST"
+                          class="contact-form">
+                      <fieldset class="form-group">
+                        <input type="text"
+                               name="name"
+                               class="form-control"
+                               id="inputName"
+                               placeholder="What's your name?">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <input type="email"
+                               class="form-control"
+                               id="inputName"
+                               name="_replyto"
+                               placeholder="What's your email address?">
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <textarea id="textArea"
+                                  rows="10"
+                                  class="form-control">
+                        </textarea>
+                      </fieldset>
+                      <button type="submit"
+                              class="btn btn-custom">
+                        Submit
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -360,8 +391,6 @@
       </div>
     </div>
   </div>
-
-
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./js/navigation.js"></script>

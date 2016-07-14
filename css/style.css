@@ -118,6 +118,17 @@ body {
   color: #056571;
 }
 
+.contact-form .btn.btn-custom {
+  color: #FF6A5C;
+  border-color: #FF6A5C;
+  background-color: transparent;
+}
+
+.contact-form .btn.btn-custom:hover {
+  color: #F5F1E9;
+  background-color: #FF6A5C;
+}
+
 .label-card {
   color: #414141;
   background-color: #FFF;
