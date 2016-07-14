@@ -49,6 +49,22 @@ $(document).ready(function(){
     });
   });
 
+  //smooth scroll to sections
+  $('#nav-main a').on('click', function() {
+    if(this.hasth !== '') {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      },800,function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+
+  //projects card overlay hide/show
   $('.projects-content .card').each(function() {
     var overlay = $(this).children('.card-img-overlay');
     $(this)
@@ -71,6 +87,10 @@ $(document).ready(function(){
         $(this).removeClass('display');
       }
     });
+  });
+
+  AOS.init({
+    once: true
   });
 
 });

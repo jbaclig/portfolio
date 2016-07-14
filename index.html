@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Jon Baclig</title>
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:400,900" rel="stylesheet">
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://use.fontawesome.com/bba617eaa8.js"></script>
 </head>
@@ -16,7 +18,9 @@
       <div class="nav-container"
            data-toggle="sticky-onscroll"
            data-collapse="left">
-        <div class="nav-tab bg-color-nav">
+        <div class="nav-tab bg-color-nav"
+             data-aos="fade-right"
+             data-aos-duration="1400">
           <nav id="nav-main" class="navbar navbar-light navbar-custom collapse-left">
             <ul class="nav">
               <li class="brand">
@@ -51,36 +55,81 @@
                 <div class="row">
                   <div class="col-xs-12 col-md-4">
                     <div class="headshot-container">
-                      <img src="./img/headshot.jpg" alt="Jon Baclig Headshot" class="headshot">
+                      <img src="./img/headshot.jpg"
+                           alt="Jon Baclig Headshot"
+                           class="headshot"
+                           data-aos="zoom-out"
+                           data-aos-duration="1400"
+                           data-aos-delay="300">
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-8">
-                    <h1 class="text-main intro-header">Hi, I'm Jon.</h1>
-                    <span class="text-secondary">
-                      Web Developer / Bedroom DJ / Wannabe Chef
-                    </span>
-                    <br>
-                    <span class="text-secondary">
+                    <h1 class="text-main intro-header"
+                        data-aos="fade-left"
+                        data-aos-duration="1400"
+                        data-aos-delay="300">
+                      Hi, I'm Jon.
+                    </h1>
+                    <div class="text-secondary">
+                      <span data-aos="fade-left"
+                            data-aos-duration="800"
+                            data-aos-delay="1500">
+                        Web Developer
+                      </span>
+                      <span data-aos="fade-left"
+                            data-aos-duration="800"
+                            data-aos-delay="1600">
+                        /
+                      </span>
+                      <span data-aos="fade-left"
+                            data-aos-duration="800"
+                            data-aos-delay="1700">
+                        Bedroom DJ
+                      </span>
+                      <span data-aos="fade-left"
+                            data-aos-duration="800"
+                            data-aos-delay="1800">
+                        /
+                      </span>
+                      <span data-aos="fade-left"
+                            data-aos-duration="800"
+                            data-aos-delay="1900">
+                        Wannabe Chef
+                      </span>
+                    </div>
+                    <div class="text-secondary"
+                          data-aos="fade-left"
+                          data-aos-duration="800"
+                          data-aos-delay="2300">
                       San Diego, California, USA
-                    </span>
+                    </div>
                     <div class="sm-icons-container text-secondary">
                       <a class="sm-icon"
                          href="https://github.com/jbaclig"
                          role="button"
-                         target="_blank">
+                         target="_blank"
+                         data-aos="zoom-in"
+                         data-aos-duration="800"
+                         data-aos-delay="2800">
                         <i class="fa fa-github color-sm-link"
                            aria-hidden="true"></i>
                       </a>
                       <a class="sm-icon "
                          href="https://www.linkedin.com/in/jonathanbaclig"
                          role="button"
-                         target="_blank">
+                         target="_blank"
+                         data-aos="zoom-in"
+                         data-aos-duration="800"
+                         data-aos-delay="2900">
                         <i class="fa fa-linkedin color-sm-link"
                            aria-hidden="true"></i>
                       </a>
                       <a class="sm-icon wide"
                          href="mailto:jon@baclig.com"
-                         role="button">
+                         role="button"
+                         data-aos="zoom-in"
+                         data-aos-duration="800"
+                         data-aos-delay="3000">
                         <i class="fa fa-envelope-o color-sm-link"
                            aria-hidden="true"></i>
                       </a>
@@ -99,8 +148,14 @@
               <div class="col-xs-11 col-xs-offset-1 col-md-10 col-md-offset-2">
                 <div class="row">
                   <div class="col-xs-12 col-md-8 col-md-offset-2">
-                    <h1 class="text-main content-header color-faded">about me</h1>
-                    <p class="text-body color-white">
+                    <h1 class="text-main content-header color-faded"
+                        data-aos="fade-right"
+                        data-aos-duration="800">
+                      about me
+                    </h1>
+                    <p class="text-body color-white"
+                       data-aos="fade-left"
+                       data-aos-duration="800">
                       I'm a 26-year-old web developer currently living and
                       working in San Diego, CA.  When I'm not in front of my
                       computer working on my current project, you can find me
@@ -123,11 +178,17 @@
               <div class="col-xs-11 col-xs-offset-1 col-md-10 col-md-offset-2">
                 <div class="row">
                   <div class="col-xs-12 text-right">
-                    <h1 class="text-main content-header color-faded">projects</h1>
+                    <h1 class="text-main content-header color-faded"
+                    data-aos="fade-left"
+                    data-aos-duration="800">
+                      projects
+                    </h1>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4"
+                       data-aos="zoom-out"
+                       data-aos-duration="800">
                     <div class="card">
                       <img class="card-img"
                       src="./img/sbpleaders-screen-318.png"
@@ -149,7 +210,9 @@
                       </div><!-- end overlay -->
                     </div><!-- end card -->
                   </div><!-- end col -->
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4"
+                       data-aos="zoom-out"
+                       data-aos-duration="800">
                     <div class="card">
                       <img src="./img/spv-1-318.png"
                            alt="SPV Graduation Survey"
@@ -250,7 +313,9 @@
                       </div><!-- end overlay -->
                     </div><!-- end card -->
                   </div><!-- end col -->
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4"
+                       data-aos="zoom-out"
+                       data-aos-duration="800">
                     <div class="card">
                       <img src="./img/forecaster-318.png"
                            alt="Weather Forecaster"
@@ -291,7 +356,9 @@
           <div class="col-xs-12">
             <div class="row experience-content bg-color-content">
               <div class="col-xs-11 col-xs-offset-1 col-md-10 col-md-offset-2">
-                <div class="row">
+                <div class="row"
+                     data-aos="fade-up"
+                     data-aos-duration="800">
                   <div class="col-xs-12">
                     <h1 class="text-main color-faded">experience</h1>
                   </div>
@@ -340,7 +407,7 @@
       <div id="contact" class="col-xs-12">
         <div class="row content bg-color-content">
           <div class="col-xs-12">
-            <div class="row">
+            <div class="row contact-content">
               <div class="col-xs-11 col-xs-offset-1 col-md-10 col-md-offset-2">
                 <div class="row">
                   <div class="col-xs-12 text-right">
@@ -394,6 +461,7 @@
   </div>
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
   <script src="./js/navigation.js"></script>
 </body>
 
