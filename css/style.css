@@ -39,6 +39,10 @@ body {
   font-size: 14px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 /***** colors *****/
 .color-white {
   color: #fff;
@@ -57,7 +61,15 @@ body {
 }
 
 .bg-color-content.about-content {
+  background-color: #FF6A5C;
+}
+
+.bg-color-content.projects-content {
   background-color: #056571;
+}
+
+.bg-color-card-sbpleaders {
+  background-color: #414141;
 }
 
 .color-nav-link, .navbar-toggler {
@@ -80,10 +92,6 @@ body {
 .color-sm-link {
   color: #FFF;
   border-color: #FFF;
-
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  transition: all .2s linear;
 }
 
 .color-sm-link:hover {
@@ -92,13 +100,40 @@ body {
   background-color: #FFF;
 }
 
+.card .btn.btn-custom {
+  border-color: #FFF;
+  color: #FFF;
+}
+
+.card .btn.btn-custom:hover {
+  color: #414141;
+  background-color: #FFF;
+}
+
+.label-card {
+  color: #414141;
+  background-color: #FFF;
+}
+
 /***** flexbox vertical center *****/
 .nav-container, .collapse-left {
   display: flex;
 }
 
-.nav-container, .collapse-left, .content{
+.nav-container, .collapse-left, .content, .home-content{
   align-items: center;
+}
+
+/***** custom components *****/
+button, .btn, a[role="button"], a[role="button"] > * {
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.btn.btn-custom {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
 }
 
 /***** Extra Small Devices *****/
@@ -125,6 +160,10 @@ body {
   height: 70vh;
   width: 100%;
   border-radius: 3px;
+
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .nav-container.expanded {
@@ -168,11 +207,27 @@ body {
 }
 
 /* content sections */
+.content {
+  padding: 25px 0;
+}
+
+.content-header {
+  margin-bottom: 1.5rem;
+}
+
+.about-content, .projects-content {
+  padding: 100px 0;
+}
+
+/* home page */
+#home .content {
+  padding-top: 0;
+}
+
 .home-content {
   min-height: 100vh;
 }
 
-/* home page */
 .intro-section {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -207,11 +262,44 @@ body {
 }
 
 /* about page */
-.about-content {
-  padding: 100px 0;
+
+/* projects */
+.projects-content .card {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  width: 100%;
 }
 
-@media(min-width: 413px) {
+.projects-content .card .card-img {
+  width: 100%;
+}
+
+.projects-content .card-img-overlay {
+  top: 100%;
+
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.projects-content .card-img-overlay.display {
+  top: 0;
+}
+
+.modal-header {
+  background-color: #F5F1E9;
+}
+
+.modal-header .close {
+  opacity: 1;
+}
+
+.modal-header .close:hover {
+  opacity: .4;
+}
+
+.modal-header .fa {
+  color: #FF6A5C;
 }
 
 /***** Smal Devices *****/

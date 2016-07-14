@@ -49,4 +49,20 @@ $(document).ready(function(){
     });
   });
 
+  $('.projects-content .card').each(function() {
+    var overlay = $(this).children('.card-img-overlay');
+    $(this)
+      .on('mouseenter', function() {
+        overlay.addClass('display');
+      })
+      .on('mouseleave', function() {
+        overlay.removeClass('display');
+      })
+      .on('click', function() {
+        if(!overlay.hasClass('display')){
+          overlay.add('display');
+        }
+      });
+  });
+
 });
