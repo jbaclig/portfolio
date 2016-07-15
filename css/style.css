@@ -46,11 +46,13 @@ body {
 }
 
 .color-faded {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.4);
 }
 
 .bg-color-main {
   background-color: #CCDFCB;
+  background-image: url(../img/computer-overlay.jpg);
+  background-size: cover;
 }
 
 .bg-color-nav, .bg-color-content {
