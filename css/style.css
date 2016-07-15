@@ -2,6 +2,63 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/***** animations *****/
+.animated {
+  opacity: 0;
+
+}
+
+.animated.activate {
+  opacity: 1;
+
+  transition-property: all;
+  transition-duration: .4s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+
+.animated.zoom-in {
+  transform: scale(0.8);
+}
+
+.animated.zoom-out {
+  transform: scale(1.2);
+}
+
+.animated.zoom-in.activate, .animated.zoom-out.activate {
+  transform: scale(1.0);
+}
+
+.animated.fade-right {
+  position: relative;
+  right: 100px;
+}
+
+.animated.fade-left {
+  position: relative;
+  right: -100px;
+}
+
+.animated.fade-right.activate, .animated.fade-left.activate {
+  right: 0;
+}
+
+.animated.fade-up {
+  position: relative;
+  bottom: -100px;
+}
+
+.animated.fade-down {
+  position: relative;
+  bottom: 100px;
+}
+
+.animated.fade-up.activate, .animated.fade-down.activate {
+  bottom: 0;
+}
+
+
+
 /***** typography *****/
 .text-brand {
   font-family: 'Kaushan Script', cursive;

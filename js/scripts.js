@@ -89,8 +89,29 @@ $(document).ready(function(){
     });
   });
 
-  AOS.init({
-    once: true
+  //animations
+  var getAnimationOption = function(element,option) {
+    var optionData = element.data(option);
+    if(typeof optionData !== null) {
+      var cssProperty = 'transition-'+option;
+      element.css(cssProperty,optionData);
+    }
+  }
+
+  $('.animated').each(function() {
+    var element = $(this)
+    getAnimationOption(element,'duration');
+    getAnimationOption(element,'delay');
+
+    if(element.visible(true)) {
+      element.addClass('activate');
+    }
+
+    $(window).scroll(function(){
+      if(element.visible(true)) {
+        element.addClass('activate');
+      }
+    });
   });
 
 });
