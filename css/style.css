@@ -6,7 +6,6 @@ body {
 /***** animations *****/
 .animated {
   opacity: 0;
-
 }
 
 .animated.activate {
@@ -32,12 +31,12 @@ body {
 
 .animated.fade-right {
   position: relative;
-  right: 100px;
+  right: 30px;
 }
 
 .animated.fade-left {
   position: relative;
-  right: -100px;
+  right: -30px;
 }
 
 .animated.fade-right.activate, .animated.fade-left.activate {
@@ -285,6 +284,7 @@ body {
 /* content sections */
 .content {
   padding: 25px 0;
+  position: relative;
 }
 
 .content-header {
@@ -457,8 +457,10 @@ body {
     margin-top: 100px;
     display: block;
     position: absolute;
-    top: 100%;
-    left: 40%;
+    bottom:30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .continue-arrow {
