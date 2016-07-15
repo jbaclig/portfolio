@@ -50,7 +50,7 @@ $(document).ready(function(){
   });
 
   //smooth scroll to sections
-  $('#nav-main a').on('click', function() {
+  $('#nav-main a, .continue-arrow-container a').on('click', function() {
     if(this.hasth !== '') {
       event.preventDefault();
 

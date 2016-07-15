@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /***** animations *****/
@@ -336,6 +337,10 @@ body {
   padding: 14px 14px;
 }
 
+.continue-arrow-container {
+  display: none;
+}
+
 /* about page */
 
 /* projects */
@@ -446,6 +451,37 @@ body {
 @media (min-width: 62em) {
   .nav-tab {
     height: 50vh;
+  }
+
+  .continue-arrow-container {
+    margin-top: 100px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+  }
+
+  .continue-arrow {
+    font-size: 60px;
+    color: #FF6A5C;
+    -webkit-animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: 7;
+    opacity: .2;
+  }
+
+  .continue-arrow:visited {
+    color: #FF6A5C;
+  }
+
+  .continue-arrow:hover {
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  @-webkit-keyframes pulse {
+    0% {opacity: 0.2;}
+    50% {opacity: 0.6;}
+    100% {opacity: 0.2;}
   }
 }
 
