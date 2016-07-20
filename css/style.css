@@ -108,8 +108,6 @@ body {
 
 .bg-color-main {
   background-color: #CCDFCB;
-  background-image: url(../img/computer-overlay.jpg);
-  background-size: cover;
 }
 
 .bg-color-nav, .bg-color-content {
@@ -302,6 +300,8 @@ body {
 
 .home-content {
   min-height: 100vh;
+  background-image: url(../img/bg-computer-xs.jpg);
+  background-size: cover;
 }
 
 .intro-section {
@@ -338,7 +338,36 @@ body {
 }
 
 .continue-arrow-container {
-  display: none;
+  margin-top: 100px;
+  display: block;
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.continue-arrow {
+  font-size: 60px;
+  color: #FF6A5C;
+  -webkit-animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: 7;
+  opacity: .2;
+}
+
+.continue-arrow:visited {
+  color: #FF6A5C;
+}
+
+.continue-arrow:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulse {
+  0% {opacity: 0.2;}
+  50% {opacity: 0.6;}
+  100% {opacity: 0.2;}
 }
 
 /* about page */
@@ -394,6 +423,10 @@ body {
 /***** Smal Devices *****/
 @media(min-width: 34em) {
 
+  .home-content {
+    background-image: url(../img/bg-computer-sm.jpg);
+  }
+
 }
 
 /***** Medium Devices *****/
@@ -439,6 +472,9 @@ body {
   }
 
   /* home page */
+  .home-content {
+    background-image: url(../img/bg-computer-md.jpg);
+  }
 
   /* experience page */
   .title {
@@ -453,41 +489,15 @@ body {
     height: 50vh;
   }
 
-  .continue-arrow-container {
-    margin-top: 100px;
-    display: block;
-    position: absolute;
-    bottom:30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+  .home-content {
+    background-image: url(../img/bg-computer-lg.jpg);
   }
 
-  .continue-arrow {
-    font-size: 60px;
-    color: #FF6A5C;
-    -webkit-animation: pulse 3s ease-out;
-    -webkit-animation-iteration-count: 7;
-    opacity: .2;
-  }
-
-  .continue-arrow:visited {
-    color: #FF6A5C;
-  }
-
-  .continue-arrow:hover {
-    color: #FFF;
-    cursor: pointer;
-  }
-
-  @-webkit-keyframes pulse {
-    0% {opacity: 0.2;}
-    50% {opacity: 0.6;}
-    100% {opacity: 0.2;}
-  }
 }
 
 /***** Extra Large Devices *****/
 @media (min-width: 75em) {
-
+  .home-content {
+    background-image: url(../img/bg-computer-xl.jpg);
+  }
 }
