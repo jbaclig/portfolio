@@ -498,16 +498,18 @@ body {
     background-image: url(../img/bg-computer-md.jpg);
   }
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .home-content {
+      height: 100vh !important;
+    }
+  }
+
   /* experience page */
   .title {
     line-height: 20px;
   }
 
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .home-content {
-      height: 100vh;
-    }
-  }
+
 
 }
 
