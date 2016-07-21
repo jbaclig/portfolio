@@ -149,7 +149,7 @@ body {
   border-color: #FFF;
 }
 
-.color-sm-link:hover {
+.color-sm-link:hover, .color-sm-link:focus {
   text-decoration: none;
   color: #CCDFCB;
   background-color: #FFF;
