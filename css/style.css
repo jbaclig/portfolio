@@ -321,7 +321,6 @@ body {
 }
 
 .home-content {
-  min-height: 100vh;
   background-image: url(../img/bg-computer-xs.jpg);
   background-size: cover;
 }
@@ -496,12 +495,7 @@ body {
   /* home page */
   .home-content {
     background-image: url(../img/bg-computer-md.jpg);
-  }
-
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .home-content {
-      height: 100vh !important;
-    }
+    height: 100vh;
   }
 
   /* experience page */
