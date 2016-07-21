@@ -149,9 +149,9 @@ body {
   border-color: #FFF;
 }
 
-.color-sm-link:hover, .color-sm-link:focus, .sm-icon:hover, .sm-icon:focus {
+.color-sm-link:hover, .color-sm-link:focus {
   text-decoration: none;
-  color: #CCDFCB;
+  color: #CCDFCB !important;
   background-color: #FFF;
 }
 
