@@ -223,16 +223,16 @@ body {
   height: 100vh;
   left: -41.666%;
   text-align: center;
-
-  -webkit-transition: left .2s linear;
-  -moz-transition: left .2s linear;
-  transition: left .2s linear;
 }
 
 .nav-tab {
   height: 70vh;
   width: 100%;
   border-radius: 3px;
+
+  -webkit-transition: left .2s linear;
+  -moz-transition: left .2s linear;
+  transition: left .2s linear;
 
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
