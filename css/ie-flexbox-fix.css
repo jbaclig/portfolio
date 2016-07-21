@@ -2,7 +2,7 @@
   flex: 0 0 auto !important;
 }
 
-.col.xs-12.flexbox-ie-fix {
+.col-xs-12.flexbox-ie-fix {
   width: 100% !important;
 }
 
