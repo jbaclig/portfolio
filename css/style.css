@@ -148,6 +148,14 @@ body {
   border-color: #FFF;
 }
 
+a.sm-icon:hover {
+  color: #CCDFCB;
+}
+
+a.sm-icon:focus {
+  color: #FFF;
+}
+
 .color-sm-link:hover, .color-sm-link:focus {
   text-decoration: none;
   color: #CCDFCB !important;
