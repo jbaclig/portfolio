@@ -202,21 +202,27 @@ body {
     flex: 0 0 auto !important;
   }
 
-  .col-xs-12.flexbox-ie-fix {
-    width: 100% !important;
+  .col-md-4.flexbox-ie-fix, .col-lg-4.flexbox-ie-fix {
+    width: 33.333333% !important;
+  }
+
+  .col-md-6.flexbox-ie-fix {
+    width: 50% !important;
+  }
+
+  .col-md-8.flexbox-ie-fix {
+    width: 66.666666% !important;
   }
 
   .col-md-10.flexbox-ie-fix {
     width: 83.333333% !important;
   }
 
-  .col-md-4.flexbox-ie-fix {
-    width: 33.333333% !important;
+  .col-xs-12.flexbox-ie-fix {
+    width: 100% !important;
   }
 
-  .col-md-8.flexbox-ie-fix {
-    width: 66.666666% !important;
-  }
+
 }
 
 /***** custom components *****/
@@ -448,6 +454,12 @@ body {
     background-image: url(../img/bg-computer-sm.jpg);
   }
 
+}
+
+@media(max-width: 34em) {
+  .home-content {
+    min-width: 100vh;
+  }
 }
 
 /***** Medium Devices *****/
