@@ -198,8 +198,13 @@ body {
 
 /* flexbox fix for IE */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
   .flexbox-ie-fix {
     flex: 0 0 auto !important;
+  }
+
+  .col-xs-12.flexbox-ie-fix {
+    width: 100% !important;
   }
 
   .col-md-4.flexbox-ie-fix, .col-lg-4.flexbox-ie-fix {
@@ -217,12 +222,6 @@ body {
   .col-md-10.flexbox-ie-fix {
     width: 83.333333% !important;
   }
-
-  .col-xs-12.flexbox-ie-fix {
-    width: 100% !important;
-  }
-
-
 }
 
 /***** custom components *****/
