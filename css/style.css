@@ -415,6 +415,7 @@ body {
 
 .projects-content .card .card-img {
   width: 100%;
+  height: 100%;
 }
 
 .projects-content .card-img-overlay {
